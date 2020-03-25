@@ -6,7 +6,35 @@
     align-items: center;
 }
 
+h1.welcome-text {
+    text-transform: uppercase;
+}
+
+p.sub-text {
+    letter-spacing: 4px;
+    margin-top: 5px;
+}
+
 ul.icon-list {
     display: flex;
     justify-content: space-evenly;
+    list-style-type: none;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+a.icon-link {
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 1px;
+}
+
+a.icon-link:hover {
+    transition: all .3s ease-in;
+    color: #000;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }

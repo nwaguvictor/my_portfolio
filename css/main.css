@@ -9,6 +9,8 @@ html, body {
     font-size: 100%;
     letter-spacing: 2px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right bottom, #fff, #000);
+    height: 100%;
 }
 
 .navigation {
@@ -16,8 +18,8 @@ html, body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: bisque;
     text-transform: uppercase;
+    border-bottom: 2px solid #ccc;
 }
 
 ul.nav-list {
