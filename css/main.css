@@ -9,8 +9,9 @@ html, body {
     font-size: 100%;
     letter-spacing: 2px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right bottom, #fff, #000);
+    background: linear-gradient(to right bottom, #ccc, #000) no-repeat center/cover;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .navigation {
@@ -20,6 +21,12 @@ html, body {
     padding: 0 20px;
     text-transform: uppercase;
     border-bottom: 2px solid #ccc;
+}
+
+span.toggler {
+    cursor: pointer;
+    justify-self: flex-end;
+    display: none;
 }
 
 ul.nav-list {
@@ -33,5 +40,30 @@ ul li a.nav-link {
     padding: 20px 10px;
     display: block;
     text-decoration: none;
+    color: #000;
+}
+
+a.nav-link:hover {
+    transition: all .3s ease-in;
+    color: #ccc;
 
 }
+
+/* @media screen and (max-width: 560px) {
+    ul.nav-list {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #ccc;
+    }
+
+    span.toggler {
+        display: block;
+    }
+
+    span.toggler:hover ul.nav-list {
+        display: block;
+    }
+
+} */
