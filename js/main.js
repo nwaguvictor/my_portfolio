@@ -24,3 +24,19 @@ const setClock = () => {
 }
 
 setClock();
+
+
+
+let toggled = false;
+let toggler = function() {
+    let navList = document.querySelector('.nav-list');
+
+    if (toggled) {
+        navList.style.display = "none";
+        toggled = !toggled;
+    }else {
+        navList.style.display = "block";
+        toggled = !toggled;
+    }
+}
+

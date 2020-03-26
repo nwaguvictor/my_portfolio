@@ -39,3 +39,12 @@ div.details {
 	margin-left: 20px;
 }
 
+@media screen and (max-width: 680px) {
+	section.personal_profile {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
+

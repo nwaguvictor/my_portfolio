@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | About</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/about.css">
 </head>
@@ -20,7 +19,7 @@
                     <li class="nav-item"><a class="nav-link" href="./projects.html">Projects</a></li>
                 </ul>
             </nav>
-            <span class="toggler"><i class="fa fa-bars fa-2x fa-fw"></i></span>
+            <span class="toggler" onclick="toggler()"><i class="fa fa-bars fa-2x fa-fw"></i></span>
         </div>
     </header>
 
@@ -83,8 +82,21 @@
         </section>
     </main>
 
-    <footer class="app-footer">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        
+        let toggled = false;
+        let toggler = function() {
+            let navList = document.querySelector('.nav-list');
 
-    </footer>
+            if (toggled) {
+                navList.style.display = "none";
+                toggled = !toggled;
+            }else {
+                navList.style.display = "block";
+                toggled = !toggled;
+            }
+        }
+    </script>
 </body>
 </html>
