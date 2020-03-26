@@ -7,7 +7,6 @@
 html, body {
     width: 100%;
     font-size: 100%;
-    letter-spacing: 2px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: linear-gradient(to right bottom, #ccc, #000) no-repeat center/cover;
     height: 100%;
@@ -37,7 +36,7 @@ ul.nav-list {
 }
 
 ul li a.nav-link {
-    padding: 20px 10px;
+    padding: 10px 10px;
     display: block;
     text-decoration: none;
     color: #000;
